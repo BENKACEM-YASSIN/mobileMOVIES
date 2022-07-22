@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmobile"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_below="@id/img"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/login"
+        />
+
+        <EditText
+            android:id="@+id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:autofillHints="emailAddress"
+            android:background="#25000000"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="15dp"
+            android:hint="usernam@exemple.ex"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtUsername"
+            android:layout_marginHorizontal="30dp"
+            android:autofillHints="make your password not command"
+            android:background="#25000000"
+            android:drawableLeft="@drawable/ic_baseline_visibility_off_24"
+            android:drawablePadding="15dp"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bug_bounty_banner"
+            android:contentDescription="Illustration" />
+
+        <TextView
+            android:id="@+id/txtForgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnlogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="150dp"
+            android:text="Forgot password?"
+            android:textColor="@color/teal_200" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="SIGN IN" />
+
+    </RelativeLayout>
+</ScrollView>
